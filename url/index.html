@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIETurl - Shorten Your Links</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <div class="card">
+            <!-- Header Section -->
+            <div class="header">
+                <h1>NIETurl</h1>
+                <p>Shorten your links instantly</p>
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <input type="url" id="urlInput" placeholder="Paste your long URL here..." required>
+                <button id="shortenBtn">Shorten URL</button>
+            </div>
+
+            <!-- Result Section (Hidden by default) -->
+            <div id="resultContainer" class="result-section hidden">
+                <p class="result-label">Your Shortened Link:</p>
+                
+                <div class="link-display">
+                    <a href="#" id="shortUrl" target="_blank">...</a>
+                    <button id="copyBtn">Copy</button>
+                </div>
+                
+                <!-- Success Message -->
+                <span id="copyMessage" class="copy-message">Copied to clipboard!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
